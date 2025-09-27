@@ -92,7 +92,7 @@ Actualizar el número de teléfono en `src/lib/utils.ts`:
 ```typescript
 export const whatsappUrl = (message: string = "¡Hola! Quiero hacer un pedido de Big Pollo") => {
   const encodedMessage = encodeURIComponent(message)
-  return `https://wa.me/+506XXXXXXXX?text=${encodedMessage}` // Actualizar número
+  return `https://wa.me/+573505890050?text=${encodedMessage}` // Número de WhatsApp
 }
 ```
 
@@ -123,9 +123,9 @@ npm run build
 ## 📞 Contacto
 
 Para dudas sobre el proyecto:
-- Email: info@bigpollo.com
-- WhatsApp: +506 XXXX-XXXX
+- Email: info@bigpollo.com.co
+- WhatsApp: +57 350 589 0050
 
 ---
 
-Hecho con ❤️ para Big Pollo Costa Rica
+Hecho con ❤️ para Big Pollo Colombia

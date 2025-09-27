@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { MessageCircle, Bot, X, Phone } from 'lucide-react'
+import { MessageCircle, Bot, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { whatsappUrl } from '@/lib/utils'
 import AIChat from './AIChat'
+import WhatsAppIcon from './icons/WhatsAppIcon'
 
 const FloatingChatWidget = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -124,7 +125,7 @@ const FloatingChatWidget = () => {
                   >
                     <div className="flex items-center space-x-3">
                       <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                        <Phone className="w-6 h-6 text-white" />
+                        <WhatsAppIcon className="text-white" size={24} />
                       </div>
                       <div className="flex-1">
                         <h4 className="font-semibold text-gray-900">WhatsApp</h4>

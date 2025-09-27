@@ -27,7 +27,7 @@ const Benefits = () => {
     {
       icon: Shield,
       title: 'Calidad Garantizada',
-      description: 'Certificación SENASA y controles de calidad rigurosos. Tu tranquilidad es nuestra prioridad.',
+      description: 'Certificación ICA y controles de calidad rigurosos. Tu tranquilidad es nuestra prioridad.',
       color: 'text-brand-green',
       bgColor: 'bg-brand-green/10',
     },

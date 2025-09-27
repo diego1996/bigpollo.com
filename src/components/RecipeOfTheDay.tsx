@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
-import { Clock, Users, ChefHat, MessageCircle } from 'lucide-react'
+import { Clock, Users, ChefHat } from 'lucide-react'
+import WhatsAppIcon from './icons/WhatsAppIcon'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { whatsappUrl } from '@/lib/utils'
@@ -116,7 +117,7 @@ const RecipeOfTheDay = () => {
                     className="font-bold"
                     onClick={() => window.open(whatsappUrl(`¡Hola! Quiero los ingredientes para la receta: ${recipe.name} 👨‍🍳`), '_blank')}
                   >
-                    <MessageCircle className="w-5 h-5 mr-2" />
+                    <WhatsAppIcon className="mr-2" size={20} />
                     Pedir Ingredientes
                   </Button>
                 </div>

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { MapPin, Clock, Phone, Mail, MessageCircle, Facebook, Instagram, Heart } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { whatsappUrl } from '@/lib/utils'
+import WhatsAppIcon from './icons/WhatsAppIcon'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -20,7 +21,7 @@ const Footer = () => {
     {
       icon: Phone,
       title: 'Contacto',
-      details: ['WhatsApp: +57 350 589 0050', 'Teléfono: +57 350 589 0050', 'Email: info@bigpollo.com'],
+      details: ['WhatsApp: +57 350 589 0050', 'Teléfono: +57 350 589 0050', 'Email: info@bigpollo.com.co'],
     },
   ]
 
@@ -34,7 +35,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Facebook, name: 'Facebook', href: '#' },
     { icon: Instagram, name: 'Instagram', href: '#' },
-    { icon: MessageCircle, name: 'WhatsApp', href: whatsappUrl() },
+    { icon: WhatsAppIcon, name: 'WhatsApp', href: whatsappUrl() },
   ]
 
   return (
@@ -150,7 +151,7 @@ const Footer = () => {
                   className="w-full font-semibold"
                   onClick={() => window.open(whatsappUrl('¡Hola Big Pollo! Quiero hacer un pedido 🐓'), '_blank')}
                 >
-                  <MessageCircle className="w-4 h-4 mr-2" />
+                  <WhatsAppIcon className="mr-2" size={16} />
                   Pedir WhatsApp
                 </Button>
               </div>
@@ -213,7 +214,7 @@ const Footer = () => {
             </div>
             <div className="text-center">
               <div className="text-2xl mb-1">✅</div>
-              <div className="text-xs text-gray-400">SENASA Certificado</div>
+              <div className="text-xs text-gray-400">ICA Certificado</div>
             </div>
           </div>
         </motion.div>

@@ -170,7 +170,7 @@ const PrivacyPolicy = () => {
               <Mail className="w-5 h-5 text-brand-red" />
               <div>
                 <p className="font-semibold text-gray-800">Email</p>
-                <p className="text-gray-600">info@bigpollo.com</p>
+                <p className="text-gray-600">info@bigpollo.com.co</p>
               </div>
             </div>
           </div>

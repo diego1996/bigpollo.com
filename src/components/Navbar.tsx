@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, X, MessageCircle } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
+import WhatsAppIcon from './icons/WhatsAppIcon'
 import { Button } from '@/components/ui/button'
 import { whatsappUrl } from '@/lib/utils'
 
@@ -53,7 +54,7 @@ const Navbar = () => {
               className="font-semibold"
               onClick={() => window.open(whatsappUrl(), '_blank')}
             >
-              <MessageCircle className="w-4 h-4 mr-2" />
+              <WhatsAppIcon className="mr-2" size={16} />
               Pedir WhatsApp
             </Button>
           </div>
@@ -99,7 +100,7 @@ const Navbar = () => {
                     setIsOpen(false)
                   }}
                 >
-                  <MessageCircle className="w-4 h-4 mr-2" />
+                  <WhatsAppIcon className="mr-2" size={16} />
                   Pedir WhatsApp
                 </Button>
               </div>

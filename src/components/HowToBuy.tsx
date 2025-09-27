@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
-import { MessageCircle, ShoppingCart, Truck, CheckCircle } from 'lucide-react'
+import { ShoppingCart, Truck, CheckCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { whatsappUrl } from '@/lib/utils'
+import WhatsAppIcon from './icons/WhatsAppIcon'
 
 const HowToBuy = () => {
   const steps = [
@@ -14,7 +15,7 @@ const HowToBuy = () => {
       borderColor: 'border-brand-red/20',
     },
     {
-      icon: MessageCircle,
+      icon: WhatsAppIcon,
       title: 'Escríbenos por WhatsApp',
       description: 'Contacta con nosotros directamente para hacer tu pedido y aclarar cualquier duda.',
       color: 'text-green-600',
@@ -123,7 +124,7 @@ const HowToBuy = () => {
                         className="font-bold text-lg shadow-lg"
                         onClick={() => window.open(whatsappUrl('¡Hola Big Pollo! Quiero hacer un pedido 🐓'), '_blank')}
                       >
-                        <MessageCircle className="w-5 h-5 mr-2" />
+                        <WhatsAppIcon className="mr-2" size={20} />
                         Escribir Ahora
                       </Button>
                     </motion.div>

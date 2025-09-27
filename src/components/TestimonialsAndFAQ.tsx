@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown, Star, Quote, MessageCircle, User } from 'lucide-react'
+import { ChevronDown, Star, Quote, User } from 'lucide-react'
+import WhatsAppIcon from './icons/WhatsAppIcon'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { whatsappUrl } from '@/lib/utils'
@@ -210,7 +211,7 @@ const TestimonialsAndFAQ = () => {
               className="font-bold"
               onClick={() => window.open(whatsappUrl('¡Hola! Tengo una pregunta sobre Big Pollo 🤔'), '_blank')}
             >
-              <MessageCircle className="w-5 h-5 mr-2" />
+              <WhatsAppIcon className="mr-2" size={20} />
               Hacer una Pregunta
             </Button>
           </div>

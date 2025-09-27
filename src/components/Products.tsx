@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion'
-import { ShoppingCart, Users, User, MessageCircle } from 'lucide-react'
+import { ShoppingCart, Users, User } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { whatsappUrl } from '@/lib/utils'
+import WhatsAppIcon from './icons/WhatsAppIcon'
 
 const Products = () => {
   const products = [
@@ -155,7 +156,7 @@ const Products = () => {
                     className="w-full bg-brand-red hover:bg-brand-red/90 text-white font-semibold"
                     onClick={() => window.open(whatsappUrl(`¡Hola! Me interesa el ${product.name}. ¿Podrían darme más información?`), '_blank')}
                   >
-                    <MessageCircle className="w-4 h-4 mr-2" />
+                    <WhatsAppIcon className="mr-2" size={16} />
                     Pedir por WhatsApp
                   </Button>
                 </CardFooter>

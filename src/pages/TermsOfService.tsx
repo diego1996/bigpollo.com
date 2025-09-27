@@ -55,7 +55,7 @@ const TermsOfService = () => {
       title: 'Calidad y Garantías',
       content: [
         'Garantizamos la frescura de todos nuestros productos',
-        'Productos certificados por SENASA y autoridades sanitarias',
+        'Productos certificados por ICA y autoridades sanitarias colombianas',
         'Reportar problemas de calidad dentro de las 24 horas',
         'Reemplazo gratuito por productos con defectos de calidad',
         'No nos responsabilizamos por mal manejo posterior a la entrega'
