@@ -96,7 +96,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="grid grid-cols-2 sm:grid-cols-4 gap-4"
             >
-              {badges.map((badge, index) => (
+              {badges.map((badge) => (
                 <motion.div
                   key={badge.text}
                   whileHover={{ scale: 1.05 }}

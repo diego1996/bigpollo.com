@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { MapPin, Clock, Phone, Mail, MessageCircle, Facebook, Instagram, Heart } from 'lucide-react'
+import { MapPin, Clock, Phone, Facebook, Instagram, Heart } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { whatsappUrl } from '@/lib/utils'
 import WhatsAppIcon from './icons/WhatsAppIcon'
@@ -65,7 +65,7 @@ const Footer = () => {
               </p>
 
               <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
+                {socialLinks.map((social) => (
                   <motion.a
                     key={social.name}
                     href={social.href}

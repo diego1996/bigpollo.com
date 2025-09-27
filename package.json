@@ -6,8 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:prod": "tsc && vite build --mode production",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build:prod && node deploy.cjs",
+    "deploy:test": "npm run build:prod && echo 'Build completado. Ejecutar deploy manual si es necesario.'"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -27,9 +30,11 @@
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.21",
+    "dotenv": "^17.2.2",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "ftp-deploy": "^2.4.7",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.3.0",
     "typescript": "^5.0.2",

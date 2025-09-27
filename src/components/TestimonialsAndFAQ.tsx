@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown, Star, Quote, User } from 'lucide-react'
+import { ChevronDown, Star, Quote } from 'lucide-react'
 import WhatsAppIcon from './icons/WhatsAppIcon'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'

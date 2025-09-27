@@ -1,16 +1,9 @@
 import { useState, useRef, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Send, Bot, User, X, Minimize2, Trash2, RotateCcw } from 'lucide-react'
+import { motion } from 'framer-motion'
+import { Send, Bot, User, X, Minimize2, RotateCcw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import useChatPersistence from '@/hooks/useChatPersistence'
 
-interface Message {
-  id: string
-  content: string
-  sender: 'user' | 'ai'
-  timestamp: Date
-  isTyping?: boolean
-}
 
 interface AIChatProps {
   isOpen: boolean
@@ -19,7 +12,7 @@ interface AIChatProps {
 }
 
 const AIChat = ({ isOpen, onClose, onMinimize }: AIChatProps) => {
-  const { sessionId, messages, addMessage, removeMessage, clearChat, setMessages } = useChatPersistence()
+  const { sessionId, messages, addMessage, removeMessage, clearChat } = useChatPersistence()
   const [inputValue, setInputValue] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
